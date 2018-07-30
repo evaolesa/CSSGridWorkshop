@@ -1,0 +1,54 @@
+.item-a {
+  grid-area: header;
+  background-color: deepskyblue;
+}
+.item-b {
+  grid-area: main;
+  background-color: yellow;
+}
+.item-c {
+  grid-area: sidebar;
+  background-color: tomato;
+}
+.item-d {
+  align-items: center;
+  /*align-content no te efecte quan nomes hi ha una línia d'elements*/
+  grid-area: footer;
+  background-color: lightgreen;
+}
+.item-e {
+  grid-area: main-text;
+  background-color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 100px 50px auto;
+  grid-template-rows: 40px 40px auto 40px
+  grid-template-areas: 
+    "header header header"
+    "sidebar . main"
+    "sidebar . main-text"
+    "footer footer footer"; */
+  grid-template: 
+    "header header header header" 40px
+    "sidebar . main main" 40px
+    "sidebar . main-text main-text" auto
+    "footer footer footer footer" 80px
+    / 100px 50px auto;
+  /* grid-gap: <row-gap> <column-gap>*/
+  grid-gap: 10px 10px;
+}
