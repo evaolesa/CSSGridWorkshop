@@ -1,21 +1,7 @@
 .flex-container {
   display: flex;
-  /* flex-flow: <flex-direction> <flex-wrap> */
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  /* TODO */
 }
-
-.flex-item:nth-of-type(4) {
-  order: 6;
-  /* flex: <flex-grow> <flex-shrink>? <flex-basis> */
-  flex: 1 0 auto;
-}
-
-/* .flex-item:nth-of-type(6) {
-  flex: 2;
-} */
 
 .flex-item {
   background: tomato;
