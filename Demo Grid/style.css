@@ -11,8 +11,6 @@
   background-color: tomato;
 }
 .item-d {
-  align-items: center;
-  /*align-content no te efecte quan nomes hi ha una línia d'elements*/
   grid-area: footer;
   background-color: lightgreen;
 }
@@ -22,9 +20,6 @@
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  
   color: black;
   padding: 10px;
   border-radius: 5px;
@@ -36,19 +31,13 @@
 
 .grid-container {
   display: grid;
-  /* grid-template-columns: 100px 50px auto;
-  grid-template-rows: 40px 40px auto 40px
+  grid-template-columns: 100px 50px auto;
+  grid-template-rows: 40px 40px auto 80px;
   grid-template-areas: 
     "header header header"
     "sidebar . main"
     "sidebar . main-text"
-    "footer footer footer"; */
-  grid-template: 
-    "header header header header" 40px
-    "sidebar . main main" 40px
-    "sidebar . main-text main-text" auto
-    "footer footer footer footer" 80px
-    / 100px 50px auto;
-  /* grid-gap: <row-gap> <column-gap>*/
-  grid-gap: 10px 10px;
+    "footer footer footer";
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
 }
