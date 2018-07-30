@@ -1,13 +1,17 @@
 .flex-container {
   display: flex;
+  /* flex-flow: row; */
+  /* flex-wrap: wrap; */
   /* flex-flow: <flex-direction> <flex-wrap> */
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
+  /* align-content si hi ha més d'una línia d'elements */
+  /* align-content: center; */
 }
 
 .flex-item:nth-of-type(4) {
+  /* l'element 4 estará a la posició 6 */
   order: 6;
   /* flex: <flex-grow> <flex-shrink>? <flex-basis> */
   flex: 1 0 auto;
