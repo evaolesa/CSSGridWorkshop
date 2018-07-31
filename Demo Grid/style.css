@@ -1,28 +1,19 @@
 .item-a {
   grid-area: header;
   background-color: deepskyblue;
-  width: 60%;
-  height: 60%;
 }
 .item-b {
   grid-area: main;
   background-color: yellow;
-  width: 60%;
-  height: 60%;
 }
 .item-c {
   grid-area: sidebar;
   background-color: tomato;
-  width: 60%;
-  height: 60%;
 }
 .item-d {
   align-items: center;
-  /*align-content no te efecte quan nomes hi ha una línia d'elements*/
   grid-area: footer;
   background-color: lightgreen;
-  width: 60%;
-  height: 60%;
 }
 .item-e {
   grid-area: main-text;
