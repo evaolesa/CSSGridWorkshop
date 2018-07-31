@@ -35,31 +35,11 @@
 
 .grid-container {
   display: grid;
-  /* grid-template-columns: 100px 50px auto;
-  grid-template-rows: 40px 40px auto 40px;
-  grid-template-areas: 
-    "header header header"
-    "sidebar . main"
-    "sidebar . main-text"
-    "footer footer footer"; */
   grid-template: 
-    "header header header header" 40px
-    "sidebar . main main" 40px
-    "sidebar . main-text main-text" auto
-    "footer footer footer footer" 80px
+    "header header header" 40px
+    "sidebar . main" 40px
+    "sidebar . main-text" auto
+    "footer footer footer" 80px
     / 100px 50px auto;
-  /* grid-row-gap: 10px; */
-  /* grid-column-gap: 10px; */
-  /* grid-gap: <row-gap> <column-gap> */
   grid-gap: 10px 10px;
-  /* moure tots els elements en peça */
-  /* justify-content: center;
-  align-content: center; */
-  /* place-content: <align-content> <justify-content>; */
-
-  /* aliniar l'element dins la seva quadricula */
-  justify-items: center;
-  align-items: end;
-  /* place-items: <align-items> <justify-items>; */
-
 }
